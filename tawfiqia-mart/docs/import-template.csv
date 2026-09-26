@@ -1,0 +1,2 @@
+sku,name_ar,name_en,category,brand,price_egp,cost_egp,discount_percent,stock_quantity,low_stock_threshold,status,condition,oem_number,part_number,warranty,is_featured,is_returnable,short_description
+TM-EXAMPLE-001,فلتر زيت تجريبي,Demo Oil Filter,فلاتر,تويوتا,180,135,0,40,8,published,new,90915-YZZE1,90915-YZZE1,استبدال خلال 14 يومًا,0,1,فلتر زيت أصلي يناسب الموديلات الموضحة في بيانات المنتج
