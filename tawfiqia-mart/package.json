@@ -1,0 +1,50 @@
+{
+  "name": "tawfiqia-mart",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint \"src/app/(shop)\" \"src/app/auth\" \"src/app/403\" \"src/app/layout.tsx\" \"src/app/error.tsx\" \"src/app/not-found.tsx\" \"src/app/robots.ts\" \"src/app/sitemap.xml\" \"src/app/sitemap\" \"src/app/manifest.ts\" \"src/components/ui\" \"src/components/layout\" \"src/components/catalog\" \"src/components/product\" \"src/components/checkout\" \"src/components/account\" \"src/components/providers\" \"src/components/home\" \"src/components/cart\" \"src/components/wishlist\" \"src/components/auth\" \"src/components/orders\" \"src/components/info\" \"src/lib\" \"src/types\" \"src/middleware.ts\"",
+    "lint:admin": "eslint \"src/app/admin\" \"src/components/admin\" \"src/app/api\" \"src/lib/server/admin\"",
+    "typecheck": "npm run typecheck:shop && npm run typecheck:admin-a && npm run typecheck:admin-b",
+    "typecheck:shop": "tsc -p tsconfig.check-shop.json --noEmit",
+    "typecheck:admin-a": "tsc -p tsconfig.check-admin-a.json --noEmit",
+    "typecheck:admin-b": "tsc -p tsconfig.check-admin-b.json --noEmit",
+    "verify": "npm run typecheck && npm run lint && npm run lint:admin && npm run leakguard && npm run build",
+    "leakguard": "node qa/leak-guard.mjs"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
+    "@supabase/ssr": "0.12.7",
+    "@supabase/supabase-js": "^2.116.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.451.0",
+    "next": "^15.5.25",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.0",
+    "server-only": "^0.0.1",
+    "sharp": "^0.35.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.11",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.25",
+    "playwright-core": "^1.63.0",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.2"
+  },
+  "overrides": {
+    "postcss": "^8.5.28"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}

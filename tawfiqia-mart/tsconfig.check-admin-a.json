@@ -1,0 +1,23 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "noEmit": true, "incremental": false, "skipLibCheck": true },
+  "include": [
+    "next-env.d.ts",
+    "src/app/admin/layout.tsx",
+    "src/app/admin/page.tsx",
+    "src/app/admin/products/**/*.{ts,tsx}",
+    "src/app/admin/inventory/**/*.{ts,tsx}",
+    "src/app/admin/coupons/**/*.{ts,tsx}",
+    "src/app/admin/reviews/**/*.{ts,tsx}",
+    "src/app/admin/categories/**/*.{ts,tsx}",
+    "src/app/admin/brands/**/*.{ts,tsx}",
+    "src/app/admin/vehicles/**/*.{ts,tsx}",
+    "src/app/admin/suppliers/**/*.{ts,tsx}",
+    "src/app/admin/banners/**/*.{ts,tsx}",
+    "src/app/admin/settings/**/*.{ts,tsx}",
+    "src/components/admin/**/*.{ts,tsx}",
+    "src/lib/server/admin/**/*.{ts,tsx}",
+    "src/app/api/admin/**/*.{ts,tsx}",
+    "src/app/api/uploads/content/**/*.{ts,tsx}"
+  ]
+}

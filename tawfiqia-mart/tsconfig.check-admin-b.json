@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "noEmit": true, "incremental": false, "skipLibCheck": true },
+  "include": [
+    "next-env.d.ts",
+    "src/app/admin/layout.tsx",
+    "src/app/admin/page.tsx",
+    "src/app/admin/orders/**/*.{ts,tsx}",
+    "src/app/admin/payments/**/*.{ts,tsx}",
+    "src/app/admin/returns/**/*.{ts,tsx}",
+    "src/app/admin/customers/**/*.{ts,tsx}",
+    "src/app/admin/messages/**/*.{ts,tsx}",
+    "src/app/admin/analytics/**/*.{ts,tsx}",
+    "src/app/admin/audit-logs/**/*.{ts,tsx}",
+    "src/components/admin/**/*.{ts,tsx}",
+    "src/lib/server/admin/**/*.{ts,tsx}"
+  ]
+}
